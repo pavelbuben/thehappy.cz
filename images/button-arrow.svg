@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="More-than-detail" sketch:type="MSArtboardGroup" transform="translate(-658.000000, -1942.000000)" fill="#00E5B8">
+            <g id="Button-Top" sketch:type="MSLayerGroup" transform="translate(620.000000, 1898.000000)">
+                <path d="M43.2218254,44.8786797 C42.0554515,43.7123057 40.1507576,43.7071068 38.9791847,44.8786797 C37.8099958,46.0478686 37.8065008,47.9486364 38.9791847,49.1213203 L48.8786797,59.0208153 L51,61.1421356 L63.0208153,49.1213203 C64.1871892,47.9549464 64.1923882,46.0502525 63.0208153,44.8786797 C61.8516263,43.7094907 59.9508585,43.7059957 58.7781746,44.8786797 L51,52.6568542 L43.2218254,44.8786797 L43.2218254,44.8786797 Z" id="Arrow" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

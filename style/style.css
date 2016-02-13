@@ -1,0 +1,510 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	outline: none;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+.inside {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.inside:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+/*-----------------------------------------------------------------
+	.header
+-----------------------------------------------------------------*/
+.header {
+	background: #00E676;
+	background-image: linear-gradient(206deg, #00E676 30%, #00E5FF 100%);
+	padding: 40px 0 160px 0;
+}
+.header:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.header .logo {
+	background: url(../images/logo-svg.svg) no-repeat 0 0;
+	width: 113px;
+	height: 48px;
+	display: block;
+	overflow: hidden;
+	line-height: 500px;
+	color: #ffffff;
+	float: left;
+}
+.menu-hamburger {
+	display: none;
+}
+.menu-cros {
+	display: none;
+}
+.header .main-menu {
+	margin: 0 0 80px 0;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 48px;
+	float: right;
+}
+.header .main-menu:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.header .main-menu li {
+	height: 48px;
+	float: left;
+}
+.header .main-menu li a {
+	padding: 0 20px; 
+	height: 48px;
+	display: block;
+	float: left;
+	color: #ffffff;
+}
+.header .main-menu li a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.header .main-menu li.logo-menu {
+		display: none;
+	}
+/*-----------------------------------------------------------------
+	.language
+-----------------------------------------------------------------*/
+.header .main-menu li.language {
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+.header .main-menu li.language a {
+	padding: 0;
+	width: 48px;
+	height: 48px;
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	border: solid 2px #ffffff;
+	line-height: 44px;
+	transition: all 150ms ease-in-out;
+}
+.header .main-menu li.language a:hover {
+	background: #ffffff;
+	color: #00E676;
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+}
+.header .main-menu li.language.active a {
+	background: #ffffff;
+	color: #00E676;
+	text-decoration: none;
+}
+.header .main-menu li.language.english {
+	margin: 0 10px 0 20px;
+}
+.icon {
+	margin: 0 auto 40px auto;
+	width: 120px;
+	height: 120px;
+	display: block;
+	clear: both;
+}
+.header h2 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 54px;
+	font-weight: 100;
+}
+.header h2 span {
+	font-weight: 700;
+}
+.header .button-contact {
+	transition: all 150ms ease-in-out;
+	margin: 100px auto 0 auto;
+	width: 360px;
+	height: 70px;
+	display: block;
+	color: #ffffff;
+	border: solid 2px #ffffff;
+	text-align: center;
+	font-size: 20px;
+	line-height: 66px;
+	-webkit-border-radius: 100px;
+	   -moz-border-radius: 100px;
+	        border-radius: 100px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.header .button-contact:hover {
+	transition: all 150ms ease-in-out;
+	background: #ffffff;
+	color: #0ae5b2;
+}
+.header .button-contact.open {
+	transition: all 150ms ease-in-out;
+	background: #fff url(../images/button-arrow.svg) no-repeat center 26px;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	line-height: 500px;
+}
+/*-----------------------------------------------------------------
+	.contact-form
+-----------------------------------------------------------------*/
+.form {
+	background: #263238;
+	padding: 100px 0;
+}
+.contact-form {
+	margin: 0 auto;
+	width: 60%;
+}
+.contact-form p {
+	margin: 0 0 10px 0;
+}
+.contact-form label {
+	margin: 0 0 6px 0;
+	color: #FF1744;
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 400;
+}
+.contact-form .input {
+	background: #37474f;
+	padding: 0 20px;
+	width: 100%;
+	height: 50px;
+	border: 0;
+	   -webkit-appearance: none;  
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	font-size: 16px;
+	text-align: center;
+	color: #eceff1;
+	transition: all 150ms ease-in-out;
+}
+.contact-form .input:hover {
+	background: #3D4C54;
+	transition: all 150ms ease-in-out;
+}
+.contact-form .textarea {
+	background: #37474f;
+	padding: 20px;
+	width: 100%;
+	height: 200px;
+	border: 0;
+	   -webkit-appearance: none;  
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
+	font-family: 'Open Sans',Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #eceff1;
+	transition: all 150ms ease-in-out;
+}
+.contact-form .textarea:hover {
+	background: #3D4C54;
+	transition: all 150ms ease-in-out;
+}
+.contact-form .button {
+	background: #00E676;
+	margin: 20px 0 0 0;
+	width: 100%;
+	height: 60px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	border: 0;
+	   -webkit-appearance: none;  
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	transition: all 150ms ease-in-out;
+}
+.contact-form .button:hover {
+	background: #00CE69;
+	cursor: pointer;
+	transition: all 150ms ease-in-out;
+}
+.hlaska {
+	background: #2979ff;
+	margin: 0 auto;
+	width: 60%;
+	height: 50px;
+	line-height: 50px; 
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+}
+.dalsi-dotaz {
+	background: #00E676;
+	margin: 50px auto 0 auto;
+	padding: 0 20px;
+	width: 16%;
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	transition: all 150ms ease-in-out;
+}
+.dalsi-dotaz:hover {
+	background: #00CE69;
+	transition: all 150ms ease-in-out;
+}
+/*-----------------------------------------------------------------
+	.reference
+-----------------------------------------------------------------*/
+.reference {
+	padding: 100px 0 40px 0;
+}
+/*-----------------------------------------------------------------
+	.tabs
+-----------------------------------------------------------------*/
+.reference .tabs {
+	margin: 0 auto 20px auto;
+	width: 50%;
+}
+.reference .tabs:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.reference .tabs li {
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 36px;
+	display: block;
+	float: left;
+}
+.reference .tabs li a {
+	width: 100%;
+	height: 40px;
+	display: block;
+	float: left;
+	border: solid 2px #CFD8DC;
+	color: #607D8B;
+	transition: all 150ms ease-in-out;
+}
+.reference .tabs li a:hover {
+	background: #CFD8DC;
+	color: #ffffff;
+	transition: all 150ms ease-in-out;
+}
+.reference .tabs li a.active {
+	background: #CFD8DC;
+	color: #ffffff;
+}
+.reference .tabs li.apps a {
+	   -webkit-border-top-left-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	       -moz-border-radius-topleft: 100px;
+	    -moz-border-radius-bottomleft: 100px;
+	           border-top-left-radius: 100px;
+	        border-bottom-left-radius: 100px;
+}
+.reference .tabs li.webs a {
+	   -webkit-border-top-right-radius: 100px;
+	-webkit-border-bottom-right-radius: 100px;
+	       -moz-border-radius-topright: 100px;
+	    -moz-border-radius-bottomright: 100px;
+	           border-top-right-radius: 100px;
+	        border-bottom-right-radius: 100px;
+}
+.reference .item .button-reference, .reference .item .button-wip {
+	transition: border 200ms;
+	margin: 30px auto 0 auto;
+	width: 220px;
+	height: 60px;
+	display: block;
+	color: #607D8B;
+	text-align: center;
+	font-size: 18px;
+	line-height: 56px;
+	border: solid 2px #CFD8DC;
+	-webkit-border-radius: 100px;
+	   -moz-border-radius: 100px;
+	        border-radius: 100px;
+}
+.reference .item .button-reference:hover {
+	transition: border 200ms;
+	border: solid 2px #607D8B;
+}
+.reference .item .button-wip {
+	opacity: 0.5;
+}
+/*-----------------------------------------------------------------
+	.item
+-----------------------------------------------------------------*/
+.item {
+	padding: 60px 0 60px 0;
+	width: 33.3%;
+	float: left;
+	text-align: center;
+}
+.item .img, .item .img.apps {
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+}
+.item .img.webs {
+	margin: 0 auto;
+	width: 300px;
+	height: 200px;
+}
+.item h3 {
+	margin: 24px 0 0 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: #455A64;
+}
+.item h3 a {
+	color: #455A64;
+}
+.item h3 a:hover {
+	text-decoration: underline;
+}
+.item p {
+	margin: 22px auto 0 auto;
+	padding: 0 20px;
+	font-size: 16px;
+	color: #78909C;
+	line-height: 24px;
+}
+/*-----------------------------------------------------------------
+	.service
+-----------------------------------------------------------------*/
+.service {
+	background: #F4F5F5;
+	padding: 40px 0;
+	border-top: solid 1px #DDE3E6;
+}
+.service .item {
+	width: 50%;
+}
+.service .item .img {
+	width: 140px;
+	height: 140px;
+}
+/*-----------------------------------------------------------------
+	.contact
+-----------------------------------------------------------------*/
+.contact {
+	background: #263238;
+	padding: 40px 0;
+}
+.contact h3 {
+	margin-bottom: 8px;
+	color: #ffffff;
+}
+.contact span {
+	font-size: 16px;
+	color: #00E676;
+}
+.contact p {
+	color: #90A4AE;
+}
+.contact .item .img {
+	width: 140px;
+	height: 140px;
+}
+/*-----------------------------------------------------------------
+	.footer
+-----------------------------------------------------------------*/
+.footer {
+	background: #1E282D;
+	height: 100px;
+	color: #90A4AE;
+}
+.footer p {
+	text-align: center;
+	line-height: 100px;
+	font-size: 18px;
+	font-weight: 300;
+}
+.footer p a.email {
+	margin: 0 0 0 20px;
+	padding: 0 30px;
+	height: 48px;
+	line-height: 44px;
+	color: #ffffff;
+	font-weight: 400;
+	display: inline-block;
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	border: solid 2px #343D42;
+}
+.footer p a.eamil:hover {	
+	text-decoration: none !important;
+}
+.footer p strong {
+	margin: 0 0 0 20px;
+	padding: 0 30px;
+	height: 48px;
+	line-height: 44px;
+	color: #ffffff;
+	font-weight: 400;
+	display: inline-block;
+	-webkit-border-radius: 200px;
+	   -moz-border-radius: 200px;
+	        border-radius: 200px;
+	border: solid 2px #343D42;
+}
+.footer p strong a {
+	color: #ffffff;
+}
+.footer p em {
+	font-style: normal;
+}
+.hidden { /* honzik */
+	display: none; /* honzik */
+} /* honzik */
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="the-happy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Web" sketch:type="MSArtboardGroup" transform="translate(-880.000000, -1593.000000)">
+            <g id="Sluzby" sketch:type="MSLayerGroup" transform="translate(0.000000, 1493.000000)">
+                <g id="Webs" transform="translate(700.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <g id="Icon" transform="translate(180.000000, 100.000000)">
+                        <g id="Base-+-Mac">
+                            <circle id="Base" fill="#00E676" cx="70" cy="70" r="70"></circle>
+                            <g id="Mac" transform="translate(35.000000, 37.000000)" fill="#FFFFFF">
+                                <path d="M34,64 L18,64 L18,66 L52,66 L52,64 L36,64 L36,50 L34,50 L34,64 L34,64 L34,64 Z M2,6.00631606 L2,43.9936839 C2,46.2074438 3.79038573,48 5.99842118,48 L64.0015788,48 C66.2127082,48 68,46.2091753 68,43.9936839 L68,6.00631606 C68,3.79255617 66.2096143,2 64.0015788,2 L5.99842118,2 C3.78729181,2 2,3.79082468 2,6.00631606 L2,6.00631606 L2,6.00631606 Z M0,6.00631606 C0,2.6891193 2.67986017,0 5.99842118,0 L64.0015788,0 C67.3144154,0 70,2.68821716 70,6.00631606 L70,43.9936839 C70,47.3108807 67.3201398,50 64.0015788,50 L5.99842118,50 C2.68558464,50 0,47.3117828 0,43.9936839 L0,6.00631606 L0,6.00631606 L0,6.00631606 L0,6.00631606 Z" id="Rectangle-17"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
