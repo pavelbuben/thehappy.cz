@@ -1,0 +1,14 @@
+Allow from all #zakazuji defaultne musim povolit
+Options -Indexes
+
+
+RewriteEngine On
+RewriteBase /
+# vzdy presmerovat na verzi s WWW
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+# front controller
+#RewriteRule !\.(pdf|js|ico|css|gif|png|css|rar|zip|tar\.gz)$ index.php [L] #odkomentuji, kdyz chci refreshovat obrazky
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]

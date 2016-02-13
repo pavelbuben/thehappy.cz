@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include('lang.php'); ?>
 <html lang="cs">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -29,8 +30,8 @@
 					<li class="margin"><a href="#reference">Reference</a></li>
 					<li><a href="#contact">Contact</a></li>
 
-					<li class="language english active"><a href="/projects/happy">en</a></li>
-					<li class="language czech"><a href="/projects/happy/cz">cz</a></li>
+					<li class="language english<?=getLang() == 'en' ? ' active' : ''?>"><a href="/">en</a></li>
+					<li class="language czech<?=getLang() == 'cz' ? ' active' : ''?>"><a href="/cz">cz</a></li>
 				</ul>
 
 				<ul class="menu-hamburger">
@@ -48,7 +49,7 @@
 
 				<h2>Happy <span>Apps</span> & <span>Websites</span></h2>
 
-				<a href="#form" class="button-contact">I want a happy app or website</a>
+				<a href="#form" class="button-contact"><?=_('buttonContact')?></a>
 			</div>
 		</div>
 
@@ -90,7 +91,7 @@
 							<img src="images/reference/linee.png" alt="Linee" title="">
 						</div>
 						<h3><a href="#">Linee</a></h3>
-						<p>Linee will always remind you of a new episode of your favourite tv series or a new season.</p>
+						<p><?=_('lineeDescription')?></p>
 						<span class="button-wip">Work in Progress</span>
 					</div>
 
