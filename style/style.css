@@ -157,13 +157,13 @@ a {
 	z-index: 1;
 }
 .header .button-contact:hover {
+	background: #fff url(../images/button-arrow.svg) no-repeat center -26px;
 	transition: all 150ms ease-in-out;
-	background: #ffffff;
 	color: #0ae5b2;
 }
 .header .button-contact.open {
-	transition: all 150ms ease-in-out;
 	background: #fff url(../images/button-arrow.svg) no-repeat center 26px;
+	transition: all 150ms ease-in-out;
 	width: 70px;
 	height: 70px;
 	overflow: hidden;

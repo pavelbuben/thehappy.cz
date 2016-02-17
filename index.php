@@ -26,9 +26,9 @@
 				<div class="opacity"></div>
 				<ul class="main-menu">
 					<li class="logo-menu">The Happy</li>
-					<li><a href="/">Home</a></li>
-					<li class="margin"><a href="#reference">Reference</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="/"><?=_('menuHome')?></a></li>
+					<li class="margin"><a href="#reference"><?=_('menuReference')?></a></li>
+					<li><a href="#contact"><?=_('menuContact')?></a></li>
 
 					<li class="language english<?=getLang() == 'en' ? ' active' : ''?>"><a href="/">en</a></li>
 					<li class="language czech<?=getLang() == 'cz' ? ' active' : ''?>"><a href="/cz">cz</a></li>
@@ -57,15 +57,15 @@
 			<div class="inside">
 				<form action="mailForm.php" class="contact-form" method="post">
 					<p>
-						<input type="text" name="name" id="formName" class="input" placeholder="Enter Your Name">
+						<input type="text" name="name" id="formName" class="input" placeholder="<?=_('formName')?>">
 					</p>
 					<p>
-						<input type="text" name="email" class="input" placeholder="Enter Your Email">
+						<input type="text" name="email" class="input" placeholder="<?=_('formEmail')?>">
 					</p>
 					<p>
-						<textarea name="message" cols="40" rows="3" class="textarea" placeholder="Enter Your Message"></textarea>
+						<textarea name="message" cols="40" rows="3" class="textarea" placeholder="<?=_('formMessage')?>"></textarea>
 					</p>
-					<input type="submit" name="submit" class="button" value="Send Form">
+					<input type="submit" name="submit" class="button" value="<?=_('formSend')?>">
 				</form>
 			</div>
 		</div>
@@ -73,35 +73,35 @@
 		<div class="reference" id="reference">
 			<div class="inside">
 				<ul class="tabs apps">
-					<li class="apps active"><a href="#iphone-apps">Apps</a></li>
-					<li class="webs"><a href="#websites">Websites</a></li>
+					<li class="apps active"><a href="#iphone-apps"><?=_('tabApps')?></a></li>
+					<li class="webs"><a href="#websites"><?=_('tabWebsites')?></a></li>
 				</ul>
 				<div id="iphone-apps" class="content-webs">
 					<div class="item">
 						<div class="img apps">
 							<img src="images/reference/flipo.png" alt="Flipo" title="">
 						</div>
-						<h3><a href="#">Flipo 2.0</a></h3>
-						<p>Flipo is an app that can help you to expand your vocabulary when learning a foreign language.</p>
-						<span class="button-wip">Work in Progress</span>
+						<h3>Flipo 2.0</h3>
+						<p><?=_('flipoContent')?></p>
+						<span class="button-wip"><?=_('flipoLink')?></span>
 					</div>
 
 					<div class="item">
 						<div class="img apps">
 							<img src="images/reference/linee.png" alt="Linee" title="">
 						</div>
-						<h3><a href="#">Linee</a></h3>
-						<p><?=_('lineeDescription')?></p>
-						<span class="button-wip">Work in Progress</span>
+						<h3>Linee</h3>
+						<p><?=_('lineeContent')?></p>
+						<span class="button-wip"><?=_('lineeLink')?></span>
 					</div>
 
 					<div class="item">
 						<div class="img apps">
 							<img src="images/reference/sentence.png" alt="Winkat" title="">
 						</div>
-						<h3><a href="#">Winkat</a></h3>
-						<p>Winkat will help you to find the best entertainment in your area and new friends or a new love.</p>
-						<span class="button-wip">Work in Progress</span>
+						<h3>Winkat</h3>
+						<p><?=_('winkatContent')?></p>
+						<span class="button-wip"><?=_('winkatLink')?></span>
 					</div>
 				</div>
 				<div id="websites" class="content-webs">
@@ -109,27 +109,27 @@
 						<div class="img webs">
 							<img src="images/reference/karel-chaba.jpg" alt="Karel Chaba" title="">
 						</div>
-						<h3><a href="#">Karel Chaba</a></h3>
-						<p>Karel Chaba was a famous Czech painter well-known for his paintings of Prague. He loved Prague and beautiful women.</p>
-						<a href="http://karelchaba.cz" class="button-reference" target="_blank">Open Web</a>
+						<h3>karelchaba.cz</h3>
+						<p><?=_('karelchabaContent')?></p>
+						<a href="http://karelchaba.cz" class="button-reference" target="_blank"><?=_('karelchabaLink')?></a>
 					</div>
 
 					<div class="item">
 						<div class="img webs">
 							<img src="images/reference/a-realitka.jpg" alt="A - Realitka" title="">
 						</div>
-						<h3><a href="#">Arealitka.cz</a></h3>
-						<p>A-Realitka is a real estate agency focussing on a personal approach and high-quality services.</p>
-						<span class="button-wip">Work in Progress</span>
+						<h3>arealitka.cz</h3>
+						<p><?=_('arealitkaContent')?></p>
+						<span class="button-wip"><?=_('arealitkaLink')?></span>
 					</div>
 
 					<div class="item">
 						<div class="img webs">
 							<img src="images/reference/pb-landscapes.jpg" alt="PB Landscapes" title="">
 						</div>
-						<h3><a href="#">PB Landscapes</a></h3>
-						<p>PB Landscapes is a landscape architecture company in Perth focussing on garden design and maintenance.</p>
-						<span class="button-wip">Work in Progress</span>
+						<h3>pb-landscapes.com</h3>
+						<p><?=_('pblandscapesContent')?></p>
+						<span class="button-wip"><?=_('pblandscapesLink')?></span>
 					</div>
 				</div>
 			</div>
@@ -141,16 +141,16 @@
 					<div class="img">
 						<img src="images/apps.svg" alt="iPhone Apps" title="">
 					</div>
-					<h3>Apps</h3>
-					<p>We design apps for iOS and Android. We specialize in apps for iPhone and iPad.</p>
+					<h3><?=_('appsHeadline')?></h3>
+					<p><?=_('appsContent')?></p>
 				</div>
 
 				<div class="item">
 					<div class="img">
 						<img src="images/webs.svg" alt="Websites" title="">
 					</div>
-					<h3>Websites</h3>
-					<p>We make modern websites with a high-quality design suitable especially for mobile phones and tablets.</p>
+					<h3><?=_('websitesHeadline')?></h3>
+					<p><?=_('websitesContent')?></p>
 				</div>
 			</div>
 		</div>
@@ -163,7 +163,7 @@
 					</div>
 					<h3>Pavel</h3>
 					<span>Sesigner & Coder</span>
-					<p>Mobile apps and web designer. HTML and CSS coder.</p>
+					<p><?=_('pavelContent')?></p>
 				</div>
 
 				<div class="item">
@@ -172,7 +172,7 @@
 					</div>
 					<h3>Mirka</h3>
 					<span>Content & Office</span>
-					<p>Client website editor.</p>
+					<p><?=_('mirkaContent')?></p>
 				</div>
 
 				<div class="item">
@@ -181,20 +181,21 @@
 					</div>
 					<h3>Tomáš</h3>
 					<span>Designer & Photographer</span>
-					<p>Mobile apps designer and photographer.</p>
+					<p><?=_('tomasContent')?></p>
 				</div>
 			</div>
 		</div>
 
 		<div class="footer" id="contact">
 			<div class="inside">
-				<p><em>To contact us:</em> <a href="mailto:info@thehappy.cz" class="email">info@thehappy.cz</a><strong>+420 773 600 604</strong></p>
+				<p><em><?=_('footerHeadline')?>:</em> <a href="mailto:info@thehappy.cz" class="email">info@thehappy.cz</a><strong>+420 773 600 604</strong></p>
 			</div>
 		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/tabs.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
 
