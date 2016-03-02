@@ -70,6 +70,7 @@
 		left: 0;
 		opacity: 0.9;
 		z-index: 5;
+		display: none; /* honzik */
 	}
 	.header .main-menu {
 		background: #1E282D;
@@ -139,6 +140,9 @@
 		border-bottom: solid 1px #293237;
 		display: block;
 	}
+	.header .main-menu { /* honzik */
+		display: none; /* honzik */
+	} /* honzik */
 }
 /*------------------------------------------------------------
 	Max width 900px
@@ -159,6 +163,9 @@
 		top: 30px;
 		right: 31px;
 	}
+	.header .main-menu { /* honzik */
+		display: none; /* honzik */
+	} /* honzik */
 	.icon {
 		margin: 0 auto 30px auto;
 	}
@@ -269,6 +276,7 @@
 	}
 	.header .main-menu {
 		width: 100%;
+		display: none; /* honzik */
 	}
 	.hlaska {
 		padding: 24px 0 0 0;
@@ -313,5 +321,12 @@
 		width: 100%;
 	}
 }
+
+@media (min-width: 1051px) { /* honzik */
+	.header .main-menu { /* honzik */
+		display: block !important; /* honzik */
+	} /* honzik */
+} /* honzik */
+
 
 

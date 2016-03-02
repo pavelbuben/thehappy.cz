@@ -4,7 +4,11 @@ $('.menu-hamburger').click(function() {
 	$(".opacity").fadeIn(100);
 });
 $('.menu-cros').click(hideStuff);
-$('.main-menu a').click(hideStuff);
+$('.main-menu a').click(function(){
+	if ($('.menu-cros').is(":visible")) {
+		hideStuff();
+	}
+});
 $('.opacity').click(hideStuff);
 $('.button-contact').click(function(event){
 	event.preventDefault()
@@ -73,8 +77,11 @@ $(document).on('click', '.anotherQuestion', function(event){
 
 
 $(".scroll-to").click(function(e) {
-	e.preventDefault;
+	e.preventDefault();
+	var fragment = $(this).attr("href")
 	$('html, body').animate({
       	scrollTop: $($(this).attr("href")).offset().top
-	}, 3000);
+	}, 1000, function(){
+		window.location.hash = fragment.slice(1)
+	});
 });

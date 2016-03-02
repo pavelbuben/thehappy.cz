@@ -27,8 +27,8 @@
 				<ul class="main-menu">
 					<li class="logo-menu">The Happy</li>
 					<li><a href="/"><?=_('menuHome')?></a></li>
-					<li class="margin"><a href="#reference"><?=_('menuReference')?></a></li>
-					<li><a href="#contact"><?=_('menuContact')?></a></li>
+					<li class="margin"><a href="#reference" class="scroll-to"><?=_('menuReference')?></a></li>
+					<li><a href="#contact" class="scroll-to"><?=_('menuContact')?></a></li>
 
 					<li class="language english<?=getLang() == 'en' ? ' active' : ''?>"><a href="/">en</a></li>
 					<li class="language czech<?=getLang() == 'cz' ? ' active' : ''?>"><a href="/cz">cz</a></li>
@@ -194,7 +194,6 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/tabs.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
