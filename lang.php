@@ -8,7 +8,7 @@ function getLang() {
 	return $lang;
 }
 
-function _($key) {
+function t($key) {
 	$lang = getLang();
 
 	// MENU //

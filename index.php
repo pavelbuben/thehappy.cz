@@ -26,9 +26,9 @@
 				<div class="opacity"></div>
 				<ul class="main-menu">
 					<li class="logo-menu">The Happy</li>
-					<li><a href="/"><?=_('menuHome')?></a></li>
-					<li class="margin"><a href="#reference" class="scroll-to"><?=_('menuReference')?></a></li>
-					<li><a href="#contact" class="scroll-to"><?=_('menuContact')?></a></li>
+					<li><a href="/"><?=t('menuHome')?></a></li>
+					<li class="margin"><a href="#reference" class="scroll-to"><?=t('menuReference')?></a></li>
+					<li><a href="#contact" class="scroll-to"><?=t('menuContact')?></a></li>
 
 					<li class="language english<?=getLang() == 'en' ? ' active' : ''?>"><a href="/">en</a></li>
 					<li class="language czech<?=getLang() == 'cz' ? ' active' : ''?>"><a href="/cz">cz</a></li>
@@ -49,7 +49,7 @@
 
 				<h2>Happy <span>Apps</span> & <span>Websites</span></h2>
 
-				<a href="#form" class="button-contact"><?=_('buttonContact')?></a>
+				<a href="#form" class="button-contact"><?=t('buttonContact')?></a>
 			</div>
 		</div>
 
@@ -57,15 +57,15 @@
 			<div class="inside">
 				<form action="mailForm.php" class="contact-form" method="post">
 					<p>
-						<input type="text" name="name" id="formName" class="input" placeholder="<?=_('formName')?>">
+						<input type="text" name="name" id="formName" class="input" placeholder="<?=t('formName')?>">
 					</p>
 					<p>
-						<input type="text" name="email" class="input" placeholder="<?=_('formEmail')?>">
+						<input type="text" name="email" class="input" placeholder="<?=t('formEmail')?>">
 					</p>
 					<p>
-						<textarea name="message" cols="40" rows="3" class="textarea" placeholder="<?=_('formMessage')?>"></textarea>
+						<textarea name="message" cols="40" rows="3" class="textarea" placeholder="<?=t('formMessage')?>"></textarea>
 					</p>
-					<input type="submit" name="submit" class="button" value="<?=_('formSend')?>">
+					<input type="submit" name="submit" class="button" value="<?=t('formSend')?>">
 				</form>
 			</div>
 		</div>
@@ -73,8 +73,8 @@
 		<div class="reference" id="reference">
 			<div class="inside">
 				<ul class="tabs apps">
-					<li class="apps active"><a href="#iphone-apps"><?=_('tabApps')?></a></li>
-					<li class="webs"><a href="#websites"><?=_('tabWebsites')?></a></li>
+					<li class="apps active"><a href="#iphone-apps"><?=t('tabApps')?></a></li>
+					<li class="webs"><a href="#websites"><?=t('tabWebsites')?></a></li>
 				</ul>
 				<div id="iphone-apps" class="content-webs">
 					<div class="item">
@@ -82,8 +82,8 @@
 							<img src="images/reference/flipo.png" alt="Flipo" title="">
 						</div>
 						<h3>Flipo 2.0</h3>
-						<p><?=_('flipoContent')?></p>
-						<span class="button-wip"><?=_('flipoLink')?></span>
+						<p><?=t('flipoContent')?></p>
+						<span class="button-wip"><?=t('flipoLink')?></span>
 					</div>
 
 					<div class="item">
@@ -91,8 +91,8 @@
 							<img src="images/reference/linee.png" alt="Linee" title="">
 						</div>
 						<h3>Linee</h3>
-						<p><?=_('lineeContent')?></p>
-						<span class="button-wip"><?=_('lineeLink')?></span>
+						<p><?=t('lineeContent')?></p>
+						<span class="button-wip"><?=t('lineeLink')?></span>
 					</div>
 
 					<div class="item">
@@ -100,8 +100,8 @@
 							<img src="images/reference/sentence.png" alt="Winkat" title="">
 						</div>
 						<h3>Winkat</h3>
-						<p><?=_('winkatContent')?></p>
-						<span class="button-wip"><?=_('winkatLink')?></span>
+						<p><?=t('winkatContent')?></p>
+						<span class="button-wip"><?=t('winkatLink')?></span>
 					</div>
 				</div>
 				<div id="websites" class="content-webs">
@@ -110,8 +110,8 @@
 							<img src="images/reference/karel-chaba.jpg" alt="Karel Chaba" title="">
 						</div>
 						<h3>karelchaba.cz</h3>
-						<p><?=_('karelchabaContent')?></p>
-						<a href="http://karelchaba.cz" class="button-reference" target="_blank"><?=_('karelchabaLink')?></a>
+						<p><?=t('karelchabaContent')?></p>
+						<a href="http://karelchaba.cz" class="button-reference" target="_blank"><?=t('karelchabaLink')?></a>
 					</div>
 
 					<div class="item">
@@ -119,8 +119,8 @@
 							<img src="images/reference/a-realitka.jpg" alt="A - Realitka" title="">
 						</div>
 						<h3>arealitka.cz</h3>
-						<p><?=_('arealitkaContent')?></p>
-						<span class="button-wip"><?=_('arealitkaLink')?></span>
+						<p><?=t('arealitkaContent')?></p>
+						<span class="button-wip"><?=t('arealitkaLink')?></span>
 					</div>
 
 					<div class="item">
@@ -128,8 +128,8 @@
 							<img src="images/reference/pb-landscapes.jpg" alt="PB Landscapes" title="">
 						</div>
 						<h3>pb-landscapes.com</h3>
-						<p><?=_('pblandscapesContent')?></p>
-						<span class="button-wip"><?=_('pblandscapesLink')?></span>
+						<p><?=t('pblandscapesContent')?></p>
+						<span class="button-wip"><?=t('pblandscapesLink')?></span>
 					</div>
 				</div>
 			</div>
@@ -141,16 +141,16 @@
 					<div class="img">
 						<img src="images/apps.svg" alt="iPhone Apps" title="">
 					</div>
-					<h3><?=_('appsHeadline')?></h3>
-					<p><?=_('appsContent')?></p>
+					<h3><?=t('appsHeadline')?></h3>
+					<p><?=t('appsContent')?></p>
 				</div>
 
 				<div class="item">
 					<div class="img">
 						<img src="images/webs.svg" alt="Websites" title="">
 					</div>
-					<h3><?=_('websitesHeadline')?></h3>
-					<p><?=_('websitesContent')?></p>
+					<h3><?=t('websitesHeadline')?></h3>
+					<p><?=t('websitesContent')?></p>
 				</div>
 			</div>
 		</div>
@@ -163,7 +163,7 @@
 					</div>
 					<h3>Pavel</h3>
 					<span>Sesigner & Coder</span>
-					<p><?=_('pavelContent')?></p>
+					<p><?=t('pavelContent')?></p>
 				</div>
 
 				<div class="item">
@@ -172,7 +172,7 @@
 					</div>
 					<h3>Mirka</h3>
 					<span>Content & Office</span>
-					<p><?=_('mirkaContent')?></p>
+					<p><?=t('mirkaContent')?></p>
 				</div>
 
 				<div class="item">
@@ -181,14 +181,14 @@
 					</div>
 					<h3>Tomáš</h3>
 					<span>Designer & Photographer</span>
-					<p><?=_('tomasContent')?></p>
+					<p><?=t('tomasContent')?></p>
 				</div>
 			</div>
 		</div>
 
 		<div class="footer" id="contact">
 			<div class="inside">
-				<p><em><?=_('footerHeadline')?>:</em> <a href="mailto:info@thehappy.cz" class="email">info@thehappy.cz</a><strong>+420 773 600 604</strong></p>
+				<p><em><?=t('footerHeadline')?>:</em> <a href="mailto:info@thehappy.cz" class="email">info@thehappy.cz</a><strong>+420 773 600 604</strong></p>
 			</div>
 		</div>
 	</div>
